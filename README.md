@@ -5,7 +5,15 @@ This program determines whether it is possible to come to victory from the curre
 
 Steps to build:
 ```
-cmake .  
+mkdir build
+cd build
+cmake ..
 make
 ```
+## Testing
+
+```
+make test
+```
+You can see log file of testing in ./build/Testing/Temporary/LastTest.log.
 
