@@ -3,7 +3,7 @@
 #include <vector>
 #include "../include/Deck.hpp"
 #include "../include/MoveChains.hpp"
-
+#include "../include/DecksCompleted.hpp"
 
 
 constexpr int DeckNum = 8;
@@ -29,7 +29,7 @@ int main () {
 
     while (true) {
         MoveChains (decks);
-        if (DecksCompleted ()) {
+        if (DecksCompleted (decks)) {
             possible = true;
             break;
         }
